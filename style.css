@@ -111,10 +111,17 @@ body {
     font-family: "Arial";
     font-size: 14px;
 }
-.loginfield{
-        
+div.loginfield{
+    float: center;
+    width: 60%;
+    background-color: #f1f1f1;
+    padding: 1px;
+    margin: 1px;
+    border: 2px; 
 }
-
+div.loginfield.h3{
+    text-align: center;
+}
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width: 800px) {
