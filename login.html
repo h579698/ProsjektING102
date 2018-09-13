@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html>
 <title>mixed.</title>
-
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -15,28 +14,38 @@
     <div class="topnav">
         <a href="source.html">Hjemmeside</a>
         <a href="matias.html">Matias</a>
-        <a href="mahamed.html">Mahamud</a>
+        <a href="mahamed.html">Mahamed</a>
         <a href="Ali.html">Ali</a>
         <a href="#" style="float:right">Logg inn</a>
         <a href="about.html" style="float:right">Om oss</a>
     </div>
-
+<div class="row">
     <div class="loginfield">
         <h3>Logg inn:</h3>
+    <form action="/action_page.php">
+        <div class ="container">
+            <label for="uname"><b>Brukernavn</b></label>
+            <input type="text" placeholder="Tast inn brukernavn"
+            name="uname" required>
 
-    </div>
+            <label for"psw"><b>Passord</b></label>
+            <input type="password" placeholder="Tast inn passord">
 
+            <button type="submit">Logg inn</button>
+            <label>
+                <input type"checkbox" checked="checked" name="remember">Husk meg</label>
+        </div>
+        <div class="container" style="background-color:grey">
+            <button type="button" class="cancelbtn">Avbryt</button>
+            <span class="psw"><a href="#">Glemt passord?</a></span>
+        </div>    
+    </form>
     </div>
-    </div>
-
+</div>
     <div class="footer">
         <h2>Opphavsrett</h2>
         <p>Ali Abdi Nur Ali, Mahamed Abukar Siidi og Matias Soto Peterson
             </br>siden - 2018
         </p>
     </div>
-
-
-
-
 </body>
