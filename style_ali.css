@@ -9,7 +9,6 @@
                     color: white;
                     background-image: url("wp2.jpg");
                     background-size: 70%;
-                    background-position-x: 70%;
                 }
                 /* Header/Blog Title */
                 
@@ -130,4 +129,22 @@
                 
                 .box {
                     padding: 20px;
+                }
+                
+                .left {
+                    margin: 20px;
+                    float: left;
+                    width: 30%;
+                }
+                
+                .middle {
+                    margin: 20px;
+                    float: left;
+                    width: 30%;
+                }
+                
+                .right {
+                    margin: 20px;
+                    float: left;
+                    width: 30%;
                 }

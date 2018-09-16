@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 * {
+=======
+    * {
+>>>>>>> 06e3cf43b6b8239b203c3310586804c29e3c9a71
     box-sizing: border-box;
 }
 
@@ -7,6 +11,8 @@ body {
     padding: 10px;
     background: #f1f1f1;
 }
+
+
 /* Header/Blog Title */
 
 .header {
@@ -105,9 +111,11 @@ body {
     background: #ddd;
     margin-top: 20px;
 }
-.footer p{
+
+.footer p {
     font-size: 14px;
 }
+
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 
@@ -118,18 +126,23 @@ body {
         padding: 0;
     }
 }
-form {border: 3px solid #f1f1f1;
+
+form {
+    border: 3px solid #f1f1f1;
 }
-.loginfield{
+
+.loginfield {
     float: center;
     width: 60%;
     background-color: #f1f1f1;
     padding: 1px;
     margin: 1px;
-    border: 2px; 
+    border: 2px;
 }
-.loginfield h3{
+
+.loginfield h3 {
     text-align: center;
+<<<<<<< HEAD
 }
 input[type=text], input[type=password] {
     width: 100%;
@@ -138,43 +151,59 @@ input[type=text], input[type=password] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+=======
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+>>>>>>> 06e3cf43b6b8239b203c3310586804c29e3c9a71
     }
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
     }
-    
-button:hover {
-    opacity: 0.8;
+    button:hover {
+        opacity: 0.8;
     }
-    
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
+    .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
     }
+<<<<<<< HEAD
+=======
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+    }
+    img.avatar {
+        width: 40%;
+        border-radius: 50%;
+    }
+>>>>>>> 06e3cf43b6b8239b203c3310586804c29e3c9a71
     .container {
-    padding: 16px;
-}
-span.psw {
-    float: right;
-    padding-top: 16px;
+        padding: 16px;
     }
+<<<<<<< HEAD
     
 /* Endrer størrelsen på elementene for skjermer ved maks bredde 300 px */
 @media screen and (max-width: 300px) {
+=======
+>>>>>>> 06e3cf43b6b8239b203c3310586804c29e3c9a71
     span.psw {
-    display: block;
-    float: none;
-}
-.cancelbtn {
-    width: 100%;
+        float: right;
+        padding-top: 16px;
     }
+<<<<<<< HEAD
 }
 .presentationblock{
     float: center;
@@ -229,3 +258,15 @@ span.psw {
         border: 2px solid black;
         margin: 1px;
         padding: 1px;
+=======
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+        span.psw {
+            display: block;
+            float: none;
+        }
+        .cancelbtn {
+            width: 100%;
+        }
+    }
+>>>>>>> 06e3cf43b6b8239b203c3310586804c29e3c9a71
