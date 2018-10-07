@@ -141,15 +141,6 @@ form {
     border: 3px solid #f1f1f1;
 }
 
-.loginfield {
-    float: center;
-    width: 60%;
-    background-color: #f1f1f1;
-    padding: 1px;
-    margin: 1px;
-    border: 2px;
-}
-
 .loginfield h3 {
     text-align: center;
 }
@@ -206,26 +197,6 @@ span.psw {
     }
 }
 
-.presentationblock {
-    float: center;
-    width: 50%;
-    background-color: #adadad;
-    padding: 1px;
-    margin: 1px;
-    border: 2px;
-    line-height: 150%;
-}
-
-.presentationblock h3 {
-    text-align: left;
-    text-size-adjust: 18px;
-}
-
-.presentationblock.p {
-    text-align: left;
-    text-size-adjust: 14px;
-}
-
 .presentationblock table,
 th,
 td,
@@ -250,16 +221,6 @@ tr {
     margin: 1px;
     border: 2px;
     line-height: 150%;
-}
-
-.smallPB h3 {
-    text-align: left;
-    text-size-adjust: 18px;
-}
-
-.smallPB p {
-    text-align: left;
-    text-size-adjust: 14px;
 }
 
 .smallPB table,
