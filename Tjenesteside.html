@@ -25,13 +25,18 @@
         <div class="Middlecolumn">
             <div class="card">
                 <h1>Bruk denne tjenesten for å få anbefaling på musikk</h1>
-                <form>
-                    <input type="text" name="firstname" placeholder="Write in your favorite genre"><br>
-                    <input type="submit" value="Submit">
-                    <input type="reset">
-                </form>
+
+                <input type="text" name="firstname" placeholder="Write in your favorite genre" id="txt"><br>
+                <input type="submit" value="Submit" id="submit">
+                <input type="reset" id="reset">
 
 
+                <p id="tom"></p>
+                <p id="tom2"></p>
+                <p id="tom3"></p>
+                <p id="tom4"></p>
+                <p id="tom5"></p>
+                <p id="tom6"></p>
 
             </div>
         </div>
@@ -45,6 +50,58 @@
         </p>
     </div>
 
+    <script>
+        var txt = document.querySelector("#txt");
+        var submitEl = document.querySelector("#submit");
+        var tomEl = document.querySelector("#tom");
+        var tom2El = document.querySelector("#tom2");
+        var tom3El = document.querySelector("#tom3");
+        var tom4El = document.querySelector("#tom4");
+        var tom5El = document.querySelector("#tom5");
+        var tom6El = document.querySelector("#tom6");
+        var resetEl = document.querySelector("#reset");
+        submitEl.addEventListener("click", search);
+        resetEl.addEventListener("click", empty);
+
+
+        function search() {
+            if (txt.value == "rock") {
+                tomEl.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
+                tom2El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
+                tom3El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
+                tom4El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
+                tom5El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
+                tom6El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
+
+
+                console.log("du fikk det til");
+            } else if (txt.value == "dubstep") {
+                tomEl.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img>";
+                tom2El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
+                tom3El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
+                tom4El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
+                tom5El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
+                tom6El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
+                console.log("du fikk det til");
+            } else if (txt.value == "rap") {
+                tomEl.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img>";
+                tom2El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
+                tom3El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
+                tom4El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
+                tom5El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
+                tom6El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
+                console.log("du fikk det til");
+            } else {
+                console.log("prøv igjen");
+            }
+        }
+
+
+
+        function empty() {
+            txt.name.reset();
+        }
+    </script>
 
 
 </body>
