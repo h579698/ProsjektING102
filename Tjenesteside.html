@@ -26,7 +26,7 @@
             <div class="card">
                 <h1>Bruk denne tjenesten for å få anbefaling på musikk</h1>
 
-                <input type="text" name="firstname" placeholder="Write in your favorite genre" id="txt"><br>
+                <input type="text" placeholder="Write in your favorite genre" id="txt"><br>
                 <input type="submit" value="Submit" id="submit">
                 <input type="reset" id="reset">
 
@@ -38,6 +38,14 @@
                 <p id="tom5"></p>
                 <p id="tom6"></p>
 
+            </div>
+            <div class="card">
+                <ul>
+                    <p>Foreløpig implementerte sjangere</p>
+                    <li>rock</li>
+                    <li>dubstep</li>
+                    <li>rap</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -63,35 +71,70 @@
         submitEl.addEventListener("click", search);
         resetEl.addEventListener("click", empty);
 
-
+        //Sjekker om brukeren har inputet enten rock,dubstep eller rap. Gir deretter sanger som sammsvarer med sjangeren skrevet inn
         function search() {
             if (txt.value == "rock") {
-                tomEl.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
-                tom2El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
-                tom3El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
-                tom4El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
-                tom5El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
-                tom6El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
+                tomEl.innerHTML = "<h1>Jailhouse Rock<br><h3>Elvis Presley</h3></h1><iframe src='https://open.spotify.com/embed/track/4gphxUgq0JSFv2BCLhNDiE' height='80' allow='encrypted-media '></iframe>";
+                tom2El.innerHTML = "<h1>Rock N Roll Train<br><h3>AC/DC</h3></h1><iframe src='https://open.spotify.com/embed/track/4feXJ5IC3avXsVW9WNFSag' height='80' allow='encrypted-media '></iframe>";
+                tom3El.innerHTML = "<h1>You Got Me Rocking - Live<br><h3>The Rolling Stones</h3></h1><iframe src='https://open.spotify.com/embed/track/0cOQ1ipx6eUc8sZ5iBlfUa' height='80' allow='encrypted-media '></iframe>";
+                tom4El.innerHTML = "<h1>Mercy<br><h3>Duffy</h3></h1><iframe src='https://open.spotify.com/embed/track/1zusIxNqJu8i4g6P6hJ2Qa' height='80' allow='encrypted-media '></iframe>";
+                tom5El.innerHTML = "<h1>Detroit Rock City<br><h3>KISS</h3></h1><iframe src='https://open.spotify.com/embed/track/2jz6rWGqVCYsymwxGoaON4' height='80' allow='encrypted-media '></iframe>";
+                tom6El.innerHTML = "<h1>Rockin' All Over The World<br><h3>Status Quo</h3></h1><iframe src='https://open.spotify.com/embed/track/6YlOxoHWLjH6uVQvxUIUug' height='80' allow='encrypted-media '></iframe>";
 
 
                 console.log("du fikk det til");
             } else if (txt.value == "dubstep") {
-                tomEl.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img>";
-                tom2El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
-                tom3El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
-                tom4El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
-                tom5El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
-                tom6El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
+                tomEl.innerHTML = "<h1>I'm Everywhere (Dubstep)<br><h3>Teknoaxe</h3></h1><iframe src='https://open.spotify.com/embed/track/7wTfnTLl7B1XxVOkHIdFYX' height='80' allow='encrypted-media '></iframe>";
+                tom2El.innerHTML = "<h1>Firefly - Bravado Dubstep Remix<br><h3>Ed Sheeran</h3></h1><iframe src='https://open.spotify.com/embed/track/0dQ5jI1SGoAX2QT6N95tad' height='80' allow='encrypted-media '></iframe>";
+                tom3El.innerHTML = "<h1>Get Hyper - Dubstep Remix<br><h3>Droideka</h3></h1><iframe src='https://open.spotify.com/embed/track/6j4ZXlWfEZaa5BCXtRAgYB' height='80' allow='encrypted-media '></iframe>";
+                tom4El.innerHTML = "<h1>Liquid Dubstep<br><h3>Michael D Perkins</h3></h1><iframe src='https://open.spotify.com/embed/playlist/2liLFu35AfuSA8aLFBrkQ3' height='80' allow='encrypted-media '></iframe>";
+                tom5El.innerHTML = "<h1>Dubstep by NCS<br><h3>NCS</h3></h1><iframe src='https://open.spotify.com/embed/playlist/0fJreQdRXF8JVkktfRt8rL' height='80' allow='encrypted-media '></iframe>";
+                tom6El.innerHTML = "<h1>K-Crazy Michioso Tunes<br><h3>Spotify</h3></h1><iframe src='https://open.spotify.com/embed/playlist/37i9dQZF1DWUXxc8Mc6MmJ' height='80' allow='encrypted-media '></iframe>";
                 console.log("du fikk det til");
             } else if (txt.value == "rap") {
-                tomEl.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img>";
-                tom2El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
-                tom3El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
-                tom4El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
-                tom5El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
-                tom6El.innerHTML = "<img src='ali-img/cleveland_l.jpg'></img><br><p> Her er bildet til en kjent artist</p><br>";
+                tomEl.innerHTML = "<h1>I Might Need Security<br><h3>Chance the Rapper</h3></h1><iframe src='https://open.spotify.com/embed/track/3EApebexZ7YqDIqw2EMTDh' height='80' allow='encrypted-media '></iframe>";
+                tom2El.innerHTML = "<h1>65th & Ingleside<br><h3>Chance the Rapper</h3></h1><iframe src='https://open.spotify.com/embed/track/5H0NU2sHWUnWCcZyYlX46X' height='80' allow='encrypted-media '></iframe>";
+                tom3El.innerHTML = "<h1>RAP DEVIL<br><h3>Machine Gun Kelly</h3></h1><iframe src='https://open.spotify.com/embed/track/63TyoT9Ee03rQxv8xmdJ2l' height='80' allow='encrypted-media '></iframe>";
+                tom4El.innerHTML = "<h1>Rap Saved Me<br><h3>21 Savage, Offset, Metro Boomin</h3></h1><iframe src='https://open.spotify.com/embed/track/0tdCy39PgWN8LFWu34ORn3' height='80' allow='encrypted-media '></iframe>";
+                tom5El.innerHTML = "<h1>The Way (feat. Chance the Rapper)<br><h3>Kehlani</h3></h1><iframe src='https://open.spotify.com/embed/track/6mzaCRuLTRiz1caGOum3zT' height='80' allow='encrypted-media '></iframe>";
+                tom6El.innerHTML = "<h1>Baby<br><h3>Larsiveli, Vin og Rap</h3></h1><iframe src='https://open.spotify.com/embed/track/7KewoQlEGrofBtNZNHOhyB' height='80' allow='encrypted-media ''></iframe>";
                 console.log("du fikk det til");
+            } else if ((txt.value == (("rock") + (",") + ("dubstep") + (",") + ("rap"))) || (txt.value == (("rock") + (",") + ("rap") + (",") + ("dubstep"))) || (txt.value == (("rap") + (",") + ("dubstep") + (",") + ("rock"))) || (txt.value == (("rap") + (",") + ("rock") + (",") + ("dubstep"))) || (txt.value == (("dubstep") + (",") + ("rock") + (",") + ("rap"))) || (txt.value == (("dubstep") + (",") + ("rap") + (",") + ("rock")))) {
+                tomEl.innerHTML = "<h1>Jailhouse Rock<br><h3>Elvis Presley</h3></h1><iframe src='https://open.spotify.com/embed/track/4gphxUgq0JSFv2BCLhNDiE' height='80' allow='encrypted-media '></iframe>";
+                tom2El.innerHTML = "<h1>Rock N Roll Train<br><h3>AC/DC</h3></h1><iframe src='https://open.spotify.com/embed/track/4feXJ5IC3avXsVW9WNFSag' height='80' allow='encrypted-media '></iframe>";
+                tom3El.innerHTML = "<h1>Get Hyper - Dubstep Remix<br><h3>Droideka</h3></h1><iframe src='https://open.spotify.com/embed/track/6j4ZXlWfEZaa5BCXtRAgYB' height='80' allow='encrypted-media '></iframe>";
+                tom4El.innerHTML = "<h1>Liquid Dubstep<br><h3>Michael D Perkins</h3></h1><iframe src='https://open.spotify.com/embed/playlist/2liLFu35AfuSA8aLFBrkQ3' height='80' allow='encrypted-media '></iframe>";
+                tom5El.innerHTML = "<h1>The Way (feat. Chance the Rapper)<br><h3>Kehlani</h3></h1><iframe src='https://open.spotify.com/embed/track/6mzaCRuLTRiz1caGOum3zT' height='80' allow='encrypted-media '></iframe>";
+                tom6El.innerHTML = "<h1>Baby<br><h3>Larsiveli, Vin og Rap</h3></h1><iframe src='https://open.spotify.com/embed/track/7KewoQlEGrofBtNZNHOhyB' height='80' allow='encrypted-media ''></iframe>";
+            } else if ((txt.value == (("rap") + (",") + ("rock"))) || (txt.value == (("rock") + (",") + ("rap")))) {
+                tomEl.innerHTML = "<h1>Jailhouse Rock<br><h3>Elvis Presley</h3></h1><iframe src='https://open.spotify.com/embed/track/4gphxUgq0JSFv2BCLhNDiE' height='80' allow='encrypted-media '></iframe>";
+                tom2El.innerHTML = "<h1>Rock N Roll Train<br><h3>AC/DC</h3></h1><iframe src='https://open.spotify.com/embed/track/4feXJ5IC3avXsVW9WNFSag' height='80' allow='encrypted-media '></iframe>";
+                tom3El.innerHTML = "<h1>You Got Me Rocking - Live<br><h3>The Rolling Stones</h3></h1><iframe src='https://open.spotify.com/embed/track/0cOQ1ipx6eUc8sZ5iBlfUa' height='80' allow='encrypted-media '></iframe>";
+                tom4El.innerHTML = "<h1>Rap Saved Me<br><h3>21 Savage, Offset, Metro Boomin</h3></h1><iframe src='https://open.spotify.com/embed/track/0tdCy39PgWN8LFWu34ORn3' height='80' allow='encrypted-media '></iframe>";
+                tom5El.innerHTML = "<h1>The Way (feat. Chance the Rapper)<br><h3>Kehlani</h3></h1><iframe src='https://open.spotify.com/embed/track/6mzaCRuLTRiz1caGOum3zT' height='80' allow='encrypted-media '></iframe>";
+                tom6El.innerHTML = "<h1>Baby<br><h3>Larsiveli, Vin og Rap</h3></h1><iframe src='https://open.spotify.com/embed/track/7KewoQlEGrofBtNZNHOhyB' height='80' allow='encrypted-media ''></iframe>";
+                console.log("du fikk det til");
+            } else if ((txt.value == (("rap") + (",") + ("dubstep"))) || (txt.value == (("dubstep") + (",") + ("rap")))) {
+                tomEl.innerHTML = "<h1>I Might Need Security<br><h3>Chance the Rapper</h3></h1><iframe src='https://open.spotify.com/embed/track/3EApebexZ7YqDIqw2EMTDh' height='80' allow='encrypted-media '></iframe>";
+                tom2El.innerHTML = "<h1>65th & Ingleside<br><h3>Chance the Rapper</h3></h1><iframe src='https://open.spotify.com/embed/track/5H0NU2sHWUnWCcZyYlX46X' height='80' allow='encrypted-media '></iframe>";
+                tom3El.innerHTML = "<h1>RAP DEVIL<br><h3>Machine Gun Kelly</h3></h1><iframe src='https://open.spotify.com/embed/track/63TyoT9Ee03rQxv8xmdJ2l' height='80' allow='encrypted-media '></iframe>";
+                tom4El.innerHTML = "<h1>Liquid Dubstep<br><h3>Michael D Perkins</h3></h1><iframe src='https://open.spotify.com/embed/playlist/2liLFu35AfuSA8aLFBrkQ3' height='80' allow='encrypted-media '></iframe>";
+                tom5El.innerHTML = "<h1>Dubstep by NCS<br><h3>NCS</h3></h1><iframe src='https://open.spotify.com/embed/playlist/0fJreQdRXF8JVkktfRt8rL' height='80' allow='encrypted-media '></iframe>";
+                tom6El.innerHTML = "<h1>K-Crazy Michioso Tunes<br><h3>Spotify</h3></h1><iframe src='https://open.spotify.com/embed/playlist/37i9dQZF1DWUXxc8Mc6MmJ' height='80' allow='encrypted-media '></iframe>";
+            } else if ((txt.value == (("rock") + (",") + ("dubstep"))) || (txt.value == (("dubstep") + (",") + ("rock")))) {
+                tomEl.innerHTML = "<h1>I'm Everywhere (Dubstep)<br><h3>Teknoaxe</h3></h1><iframe src='https://open.spotify.com/embed/track/7wTfnTLl7B1XxVOkHIdFYX' height='80' allow='encrypted-media '></iframe>";
+                tom2El.innerHTML = "<h1>Firefly - Bravado Dubstep Remix<br><h3>Ed Sheeran</h3></h1><iframe src='https://open.spotify.com/embed/track/0dQ5jI1SGoAX2QT6N95tad' height='80' allow='encrypted-media '></iframe>";
+                tom3El.innerHTML = "<h1>Get Hyper - Dubstep Remix<br><h3>Droideka</h3></h1><iframe src='https://open.spotify.com/embed/track/6j4ZXlWfEZaa5BCXtRAgYB' height='80' allow='encrypted-media '></iframe>";
+                tom4El.innerHTML = "<h1>Mercy<br><h3>Duffy</h3></h1><iframe src='https://open.spotify.com/embed/track/1zusIxNqJu8i4g6P6hJ2Qa' height='80' allow='encrypted-media '></iframe>";
+                tom5El.innerHTML = "<h1>Detroit Rock City<br><h3>KISS</h3></h1><iframe src='https://open.spotify.com/embed/track/2jz6rWGqVCYsymwxGoaON4' height='80' allow='encrypted-media '></iframe>";
+                tom6El.innerHTML = "<h1>Rockin' All Over The World<br><h3>Status Quo</h3></h1><iframe src='https://open.spotify.com/embed/track/6YlOxoHWLjH6uVQvxUIUug' height='80' allow='encrypted-media '></iframe>";
             } else {
+                tomEl.innerHTML = "Se på listen av implementerte sjangere nedenfor og prøv på nytt.";
+                tom2El.innerHTML = "";
+                tom3El.innerHTML = "";
+                tom4El.innerHTML = "";
+                tom5El.innerHTML = "";
+                tom6El.innerHTML = "";
                 console.log("prøv igjen");
             }
         }
@@ -99,7 +142,9 @@
 
 
         function empty() {
-            txt.name.reset();
+            txt.name = ""; //Fjernet name, fordi den ikke kunne legge til nye submitter etter at form var blitt fjernet
+            txt.innerHTML = "";
+            location.reload();
         }
     </script>
 
