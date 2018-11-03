@@ -197,20 +197,7 @@ input[type=password] {
     box-sizing: border-box;
 }
 
-#button1 {
-    background-color: grey;
-    color: white;
-    padding: 14px 20px;
-    margin: 20px;
-    border: none;
-    position: fixed;
-    float: right;
-    cursor: pointer;
-    width: 10%;
-    right: 0;
-    top: 0;
-}
-
+#button1,
 #button2 {
     background-color: grey;
     color: white;
@@ -220,16 +207,18 @@ input[type=password] {
     position: fixed;
     float: right;
     cursor: pointer;
-    width: 10%;
-    right: 200px;
+    width: 11%;
+    right: 0;
     top: 0;
+    text-decoration: none;
 }
 
-button:hover {
-    opacity: 0.8;
-    background-color: rgb(87, 35, 35);
+#button2 {
+    right: 11.3%;
 }
 
+button:hover,
+#button1:hover,
 #button2:hover {
     opacity: 0.8;
     background-color: rgb(87, 35, 35);
