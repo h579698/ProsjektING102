@@ -156,17 +156,41 @@ input[type=password] {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: grey;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 20px;
     border: none;
+    position: fixed;
+    float: right;
     cursor: pointer;
-    width: 100%;
+    width: 10%;
+    right: 0;
+    top: 0;
+}
+
+#button2 {
+    background-color: grey;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px;
+    border: none;
+    position: fixed;
+    float: right;
+    cursor: pointer;
+    width: 10%;
+    right: 200px;
+    top: 0;
 }
 
 button:hover {
     opacity: 0.8;
+    background-color: rgb(87, 35, 35);
+}
+
+#button2:hover {
+    opacity: 0.8;
+    background-color: rgb(87, 35, 35);
 }
 
 .cancelbtn {

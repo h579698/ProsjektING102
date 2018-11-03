@@ -100,7 +100,10 @@
                 tom5El.innerHTML = "<h1>The Way (feat. Chance the Rapper)<br><h3>Kehlani</h3></h1><iframe src='https://open.spotify.com/embed/track/6mzaCRuLTRiz1caGOum3zT' height='80' allow='encrypted-media '></iframe>";
                 tom6El.innerHTML = "<h1>Baby<br><h3>Larsiveli, Vin og Rap</h3></h1><iframe src='https://open.spotify.com/embed/track/7KewoQlEGrofBtNZNHOhyB' height='80' allow='encrypted-media ''></iframe>";
                 console.log("du fikk det til");
-            } else if ((txt.value == (("rock") + (",") + ("dubstep") + (",") + ("rap"))) || (txt.value == (("rock") + (",") + ("rap") + (",") + ("dubstep"))) || (txt.value == (("rap") + (",") + ("dubstep") + (",") + ("rock"))) || (txt.value == (("rap") + (",") + ("rock") + (",") + ("dubstep"))) || (txt.value == (("dubstep") + (",") + ("rock") + (",") + ("rap"))) || (txt.value == (("dubstep") + (",") + ("rap") + (",") + ("rock")))) {
+            }
+
+            // implementert metode slik at man kan få anbefalinger på på to eller alle tre sjangerne
+            else if ((txt.value == (("rock") + (",") + ("dubstep") + (",") + ("rap"))) || (txt.value == (("rock") + (",") + ("rap") + (",") + ("dubstep"))) || (txt.value == (("rap") + (",") + ("dubstep") + (",") + ("rock"))) || (txt.value == (("rap") + (",") + ("rock") + (",") + ("dubstep"))) || (txt.value == (("dubstep") + (",") + ("rock") + (",") + ("rap"))) || (txt.value == (("dubstep") + (",") + ("rap") + (",") + ("rock")))) {
                 tomEl.innerHTML = "<h1>Jailhouse Rock<br><h3>Elvis Presley</h3></h1><iframe src='https://open.spotify.com/embed/track/4gphxUgq0JSFv2BCLhNDiE' height='80' allow='encrypted-media '></iframe>";
                 tom2El.innerHTML = "<h1>Rock N Roll Train<br><h3>AC/DC</h3></h1><iframe src='https://open.spotify.com/embed/track/4feXJ5IC3avXsVW9WNFSag' height='80' allow='encrypted-media '></iframe>";
                 tom3El.innerHTML = "<h1>Get Hyper - Dubstep Remix<br><h3>Droideka</h3></h1><iframe src='https://open.spotify.com/embed/track/6j4ZXlWfEZaa5BCXtRAgYB' height='80' allow='encrypted-media '></iframe>";
@@ -141,7 +144,7 @@
         }
 
 
-
+        // Gjenopptar nettsiden slik at alle resultater blir fjernet
         function empty() {
             txt.name = ""; //Fjernet name, fordi den ikke kunne legge til nye submitter etter at form var blitt fjernet
             txt.innerHTML = "";

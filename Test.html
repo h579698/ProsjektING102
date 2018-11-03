@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <title>Headers</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        //Get the XML document
+        var Connect = new XMLHttpRequest();
+        Connect.open("GET", "bands.xml", false);
+        Connect.send(null);
+
+        //Place the response in an XML document 
+        var docX = Connect.responseXML;
+        var e = docX.getElementsByTagName("member");
+
+        //Get all the member elements and write the
+        // contents of the nametag
+
+        for (i = 0; i < e.length; i++) {
+            document.write(e[i].textContent + "<br>");
+        }
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
