@@ -4,29 +4,22 @@
 
 <head>
     <title>Headers</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script>
-        //Get the XML document
-        var Connect = new XMLHttpRequest();
-        Connect.open("GET", "bands.xml", false);
-        Connect.send(null);
+    <link rel="stylesheet" type="text/css" href="">
 
-        //Place the response in an XML document 
-        var docX = Connect.responseXML;
-        var e = docX.getElementsByTagName("member");
-
-        //Get all the member elements and write the
-        // contents of the nametag
-
-        for (i = 0; i < e.length; i++) {
-            document.write(e[i].textContent + "<br>");
-        }
-    </script>
 </head>
 
 <body>
 
-
+    <script>
+        var c = new XMLHttpRequest;
+        c.open("GET", "band.xml", false);
+        c.send(null);
+        var docX = c.responseXML;
+        var e = docX.getElementsByTagName("member");
+        for (i = 0; i < e.length; i++) {
+            document.write(e[i].textContent + "<br>");
+        }
+    </script>
 </body>
 
 </html>

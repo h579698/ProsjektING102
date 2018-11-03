@@ -11,13 +11,20 @@
         <h1>Musikkprosjekt</h1>
     </div>
 
-    <div class="topnav">
+    <div class="navbar">
         <a href="source.html">Hjemmeside</a>
-        <a href="matias.html">Matias</a>
-        <a href="mahamed.html">Mahamed</a>
-        <a href="Ali.html">Ali</a>
         <a href="Tjenesteside.html">Tjenesteside</a>
-        <a href="about.html" style="float:right">Om oss</a>
+        <div class="dropdown" style="float:right">
+            <button class="dropbtn">
+                    Om oss
+                     </button>
+            <div class="dropdown-content">
+                <a href="about.html">Prosjektet</a>
+                <a href="matias.html">Matias</a>
+                <a href="mahamed.html">Mahamed</a>
+                <a href="Ali.html">Ali</a>
+            </div>
+        </div>
     </div>
 
     <div class="row">
@@ -40,13 +47,21 @@
 
             </div>
             <div class="card">
+
+                <h2>Foreløpig implementerte sjangere</h2>
                 <ul>
-                    <h2>Foreløpig implementerte sjangere</h2>
-                    <li>rock</li>
-                    <li>dubstep</li>
-                    <li>rap</li>
-                    <p>PS: Det er også mulig å få frem flere sjangere ved å legge på komma tegn. Eks: "rap,dubstep" eller "rock,rap,dubstep".</p>
+                    <script>
+                        var c = new XMLHttpRequest;
+                        c.open("GET", "band.xml", false);
+                        c.send(null);
+                        var docX = c.responseXML;
+                        var e = docX.getElementsByTagName("sjanger");
+                        for (i = 0; i < e.length; i++) {
+                            document.write("<li>" + e[i].textContent + "</li>");
+                        }
+                    </script>
                 </ul>
+                <p>PS: Det er også mulig å få frem flere sjangere ved å legge på komma tegn. Eks: "rap,dubstep" eller "rock,rap,dubstep".</p>
             </div>
         </div>
     </div>
@@ -69,6 +84,8 @@
         var tom5El = document.querySelector("#tom5");
         var tom6El = document.querySelector("#tom6");
         var resetEl = document.querySelector("#reset");
+
+
         submitEl.addEventListener("click", search);
         resetEl.addEventListener("click", empty);
 
